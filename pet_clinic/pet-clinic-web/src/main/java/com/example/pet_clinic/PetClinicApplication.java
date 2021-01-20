@@ -1,13 +1,13 @@
-package crixus.springframework.spring5webapp;
+package com.example.pet_clinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Spring5webappApplication {
+public class PetClinicApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Spring5webappApplication.class, args);
+        SpringApplication.run(PetClinicApplication.class, args);
     }
 
 }

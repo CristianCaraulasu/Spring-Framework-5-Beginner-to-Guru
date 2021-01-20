@@ -1,10 +1,10 @@
-package crixus.springframework.spring5webapp;
+package pet_clinic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Spring5webappApplicationTests {
+class PetClinicApplicationTests {
 
     @Test
     void contextLoads() {
