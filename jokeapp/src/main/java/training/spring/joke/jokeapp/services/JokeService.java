@@ -1,0 +1,5 @@
+package training.spring.joke.jokeapp.services;
+
+public interface JokeService {
+    String getJoke();
+}
