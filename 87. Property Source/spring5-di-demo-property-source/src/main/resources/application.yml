@@ -1,0 +1,13 @@
+cristi:
+  username: Cris
+  password: pass
+  dburl: cucu
+
+--- # this split the file in 2 separate files
+spring:
+  profiles:
+    active: de
+cristi:
+  username: Cri
+  password: pass
+  dburl: cucu

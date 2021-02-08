@@ -1,0 +1,38 @@
+# this is a comment
+name : Cristi
+
+names: # that's an inline comment
+    - John
+    - Paul
+    - Ringo
+pound_sign: "#"
+
+
+book:
+  author: Joe Dow
+  publisher: random name
+
+truth: yes
+
+another_true: True
+
+# these two are booleans
+
+more_true: true
+
+false: no #No,false FALSE -> this would be evaluated as false
+
+string_val: "This is it's quote"
+
+colon_string: "my courses : one two three"
+
+include_new_lines : | #the pipe character says read in everything
+  asdasd
+  asdasdas as das das das  asd
+  asdasd as das da
+
+ignore_new_lines : > # this will make this just as a one String. Practically, deletes the endline
+  this is something
+  very beautiful brother
+  I will call you soon!
+
