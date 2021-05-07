@@ -112,6 +112,13 @@ public class Recipe {
 
     public void setImage(Byte[] image) {
         this.image = image;
+        notes.setRecipe(this);
+    }
+
+    public Recipe addIngridient(Ingredient ingredient){
+        ingredient.setRecipe(this);
+        this.ingredients.add(ingredient);
+        return this;
     }
 
     public Notes getNotes() {
