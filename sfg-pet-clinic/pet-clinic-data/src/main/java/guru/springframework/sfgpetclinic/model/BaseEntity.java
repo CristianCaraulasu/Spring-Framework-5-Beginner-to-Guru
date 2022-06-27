@@ -15,6 +15,8 @@ import java.io.Serializable;
  * Created by jt on 7/18/18.
  */
 
+@Getter
+@Setter
 @MappedSuperclass
 public class BaseEntity implements Serializable {
 
@@ -22,15 +24,4 @@ public class BaseEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO )
     private Long id;
 
-    public boolean isNew() {
-        return this.id == null;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 }
