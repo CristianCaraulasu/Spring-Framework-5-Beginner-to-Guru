@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
+import java.util.Optional;
 import java.util.Set;
 
 @Service
@@ -66,7 +67,16 @@ public class OwnerMapService extends AbstractMapService<Owner,Long> implements O
 
     @Override
     public Owner findByLastName(String lastName) {
-        return null;
+        Optional<Owner> result = null;
+        Set<Owner> ownerSet = this.findAll();
+        for(Owner owner: ownerSet){
+            if(owner.getLastName().equals(lastName)){
+                result = Optional.of(owner);
+                break;
+            }
+        }
+        result.ifPresent(owner -> System.out.println(owner.getLastName()));
+        return result.orElse(null);
     }
 
     @PostConstruct

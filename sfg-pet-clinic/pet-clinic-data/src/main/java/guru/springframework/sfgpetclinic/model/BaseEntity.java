@@ -1,9 +1,6 @@
 package guru.springframework.sfgpetclinic.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,7 +11,6 @@ import java.io.Serializable;
 /**
  * Created by jt on 7/18/18.
  */
-
 @Getter
 @Setter
 @MappedSuperclass
